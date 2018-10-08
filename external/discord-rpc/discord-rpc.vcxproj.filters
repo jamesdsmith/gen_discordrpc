@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="win32-dynamic\include\discord_register.h" />
+    <ClInclude Include="win32-dynamic\include\discord_rpc.h" />
+    <ClInclude Include="win32-static\include\discord_register.h" />
+    <ClInclude Include="win32-static\include\discord_rpc.h" />
+    <ClInclude Include="win64-dynamic\include\discord_register.h" />
+    <ClInclude Include="win64-dynamic\include\discord_rpc.h" />
+    <ClInclude Include="win64-static\include\discord_register.h" />
+    <ClInclude Include="win64-static\include\discord_rpc.h" />
+  </ItemGroup>
+</Project>
