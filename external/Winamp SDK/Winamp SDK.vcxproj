@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{88407D36-B0EF-4492-A5FA-DFFB025327D6}</ProjectGuid>
+    <RootNamespace>WinampSDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="coverdirectory\CoverDirectory.cpp" />
+    <ClCompile Include="coverdirectory\main.cpp" />
+    <ClCompile Include="dsp_test\dsp_test.c" />
+    <ClCompile Include="enc_flac\AudioCoderFlake.cpp" />
+    <ClCompile Include="enc_flac\flake\libflake\crc.c" />
+    <ClCompile Include="enc_flac\flake\libflake\encode.c" />
+    <ClCompile Include="enc_flac\flake\libflake\lpc.c" />
+    <ClCompile Include="enc_flac\flake\libflake\md5.c" />
+    <ClCompile Include="enc_flac\flake\libflake\optimize.c" />
+    <ClCompile Include="enc_flac\flake\libflake\rice.c" />
+    <ClCompile Include="enc_flac\flake\libflake\vbs.c" />
+    <ClCompile Include="enc_flac\main.cpp" />
+    <ClCompile Include="gen_classicart\gen_classicart.cpp" />
+    <ClCompile Include="gen_tray\TRAYCTL.C" />
+    <ClCompile Include="in_chain\main.cpp" />
+    <ClCompile Include="in_raw\MAIN.C" />
+    <ClCompile Include="in_tone\MAIN.C" />
+    <ClCompile Include="irctell\dde.cpp" />
+    <ClCompile Include="irctell\irctell.cpp" />
+    <ClCompile Include="mlExplorer\mlExplorer.cpp" />
+    <ClCompile Include="ml_http\HTMLControl.cpp" />
+    <ClCompile Include="ml_http\main.cpp" />
+    <ClCompile Include="ml_http\SampleHttp.cpp" />
+    <ClCompile Include="ml_iso\main.cpp" />
+    <ClCompile Include="ml_iso\ToISO.cpp" />
+    <ClCompile Include="ml_xmlex\main.cpp" />
+    <ClCompile Include="ml_xmlex\xmlview.cpp" />
+    <ClCompile Include="nde\Binary32Field.cpp" />
+    <ClCompile Include="nde\BinaryField.cpp" />
+    <ClCompile Include="nde\ColumnField.cpp" />
+    <ClCompile Include="nde\Crc.cpp" />
+    <ClCompile Include="nde\Database.cpp" />
+    <ClCompile Include="nde\DBUtils.cpp" />
+    <ClCompile Include="nde\entrypoint.cpp" />
+    <ClCompile Include="nde\Field.cpp" />
+    <ClCompile Include="nde\FilenameField.cpp" />
+    <ClCompile Include="nde\Filter.cpp" />
+    <ClCompile Include="nde\Index.cpp" />
+    <ClCompile Include="nde\IndexField.cpp" />
+    <ClCompile Include="nde\Int128Field.cpp" />
+    <ClCompile Include="nde\Int64Field.cpp" />
+    <ClCompile Include="nde\IntegerField.cpp" />
+    <ClCompile Include="nde\LinkedList.cpp" />
+    <ClCompile Include="nde\NDEString.cpp" />
+    <ClCompile Include="nde\Query.cpp" />
+    <ClCompile Include="nde\Record.cpp" />
+    <ClCompile Include="nde\Scanner.cpp" />
+    <ClCompile Include="nde\StringField.cpp" />
+    <ClCompile Include="nde\StringFieldW.cpp" />
+    <ClCompile Include="nde\Table.cpp" />
+    <ClCompile Include="nde\Vfs.cpp" />
+    <ClCompile Include="nu\HTMLContainer.cpp" />
+    <ClCompile Include="out_null\main.c" />
+    <ClCompile Include="plLoadEx\ExComponent.cpp" />
+    <ClCompile Include="plLoadEx\SimpleHandler.cpp" />
+    <ClCompile Include="plLoadEx\SimpleHandlerFactory.cpp" />
+    <ClCompile Include="plLoadEx\SimpleLoader.cpp" />
+    <ClCompile Include="plLoadEx\w5s.cpp" />
+    <ClCompile Include="ReplayGainAnalysis\gain_analysis.c" />
+    <ClCompile Include="xspf\main.cpp" />
+    <ClCompile Include="xspf\XSPFHandler.cpp" />
+    <ClCompile Include="xspf\XSPFHandlerFactory.cpp" />
+    <ClCompile Include="xspf\XSPFLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agave\AlbumArt\svc_albumArtProvider.h" />
+    <ClInclude Include="Agave\Component\ifc_wa5component.h" />
+    <ClInclude Include="Agave\Config\api_config.h" />
+    <ClInclude Include="Agave\Config\ifc_configgroup.h" />
+    <ClInclude Include="Agave\Config\ifc_configitem.h" />
+    <ClInclude Include="Agave\DecodeFile\api_decodefile.h" />
+    <ClInclude Include="Agave\DecodeFile\ifc_audiostream.h" />
+    <ClInclude Include="Agave\Language\api_language.h" />
+    <ClInclude Include="Agave\Language\lang.h" />
+    <ClInclude Include="Agave\Metadata\api_metadata.h" />
+    <ClInclude Include="Agave\Metadata\svc_metatag.h" />
+    <ClInclude Include="burner\obj_isocreator.h" />
+    <ClInclude Include="coverdirectory\api.h" />
+    <ClInclude Include="coverdirectory\CoverDirectory.h" />
+    <ClInclude Include="dsp_test\RESOURCE.H" />
+    <ClInclude Include="enc_flac\AudioCoderFlake.h" />
+    <ClInclude Include="enc_flac\flake\bswap.h" />
+    <ClInclude Include="enc_flac\flake\common.h" />
+    <ClInclude Include="enc_flac\flake\config.h" />
+    <ClInclude Include="enc_flac\flake\libflake\bitio.h" />
+    <ClInclude Include="enc_flac\flake\libflake\crc.h" />
+    <ClInclude Include="enc_flac\flake\libflake\encode.h" />
+    <ClInclude Include="enc_flac\flake\libflake\flake.h" />
+    <ClInclude Include="enc_flac\flake\libflake\lpc.h" />
+    <ClInclude Include="enc_flac\flake\libflake\md5.h" />
+    <ClInclude Include="enc_flac\flake\libflake\optimize.h" />
+    <ClInclude Include="enc_flac\flake\libflake\rice.h" />
+    <ClInclude Include="enc_flac\flake\libflake\vbs.h" />
+    <ClInclude Include="enc_flac\resource.h" />
+    <ClInclude Include="gen_classicart\api.h" />
+    <ClInclude Include="gen_classicart\resource.h" />
+    <ClInclude Include="gen_ml\childwnd.h" />
+    <ClInclude Include="gen_ml\ml.h" />
+    <ClInclude Include="gen_ml\ml_ipc_0313.h" />
+    <ClInclude Include="gen_tray\api.h" />
+    <ClInclude Include="gen_tray\RESOURCE.H" />
+    <ClInclude Include="gen_tray\WINAMPCMD.H" />
+    <ClInclude Include="irctell\api.h" />
+    <ClInclude Include="irctell\dde.h" />
+    <ClInclude Include="irctell\irctell.h" />
+    <ClInclude Include="ml_http\HTMLControl.h" />
+    <ClInclude Include="ml_http\main.h" />
+    <ClInclude Include="ml_http\resource.h" />
+    <ClInclude Include="ml_iso\api.h" />
+    <ClInclude Include="ml_iso\main.h" />
+    <ClInclude Include="ml_local\api_mldb.h" />
+    <ClInclude Include="ml_rg\obj_replaygain.h" />
+    <ClInclude Include="ml_wire\api_podcasts.h" />
+    <ClInclude Include="ml_wire\ifc_article.h" />
+    <ClInclude Include="ml_wire\ifc_podcast.h" />
+    <ClInclude Include="ml_xmlex\main.h" />
+    <ClInclude Include="ml_xmlex\resource.h" />
+    <ClInclude Include="nde\Binary32Field.h" />
+    <ClInclude Include="nde\BinaryField.h" />
+    <ClInclude Include="nde\ColumnField.h" />
+    <ClInclude Include="nde\CRC.H" />
+    <ClInclude Include="nde\Database.h" />
+    <ClInclude Include="nde\DBUtils.h" />
+    <ClInclude Include="nde\Field.h" />
+    <ClInclude Include="nde\FilenameField.h" />
+    <ClInclude Include="nde\Filter.h" />
+    <ClInclude Include="nde\Index.h" />
+    <ClInclude Include="nde\IndexField.h" />
+    <ClInclude Include="nde\Int128Field.h" />
+    <ClInclude Include="nde\Int64Field.h" />
+    <ClInclude Include="nde\IntegerField.h" />
+    <ClInclude Include="nde\LinkedList.h" />
+    <ClInclude Include="nde\nde.h" />
+    <ClInclude Include="nde\NDEString.h" />
+    <ClInclude Include="nde\Query.h" />
+    <ClInclude Include="nde\Record.h" />
+    <ClInclude Include="nde\Scanner.h" />
+    <ClInclude Include="nde\StringField.h" />
+    <ClInclude Include="nde\StringFieldW.h" />
+    <ClInclude Include="nde\Table.h" />
+    <ClInclude Include="nde\Vfs.h" />
+    <ClInclude Include="nsv\enc_if.h" />
+    <ClInclude Include="nu\AutoChar.h" />
+    <ClInclude Include="nu\AutoWide.h" />
+    <ClInclude Include="nu\HTMLContainer.h" />
+    <ClInclude Include="playlist\api_playlistmanager.h" />
+    <ClInclude Include="playlist\ifc_playlistloader.h" />
+    <ClInclude Include="playlist\ifc_playlistloadercallback.h" />
+    <ClInclude Include="playlist\ifc_plentryinfo.h" />
+    <ClInclude Include="playlist\svc_playlisthandler.h" />
+    <ClInclude Include="plLoadEx\ExComponent.h" />
+    <ClInclude Include="plLoadEx\SimpleHandler.h" />
+    <ClInclude Include="plLoadEx\SimpleHandlerFactory.h" />
+    <ClInclude Include="plLoadEx\SimpleLoader.h" />
+    <ClInclude Include="ReplayGainAnalysis\gain_analysis.h" />
+    <ClInclude Include="Wasabi\api\application\api_application.h" />
+    <ClInclude Include="Wasabi\api\application\ifc_messageprocessor.h" />
+    <ClInclude Include="Wasabi\api\core\api_core.h" />
+    <ClInclude Include="Wasabi\api\memmgr\api_memmgr.h" />
+    <ClInclude Include="Wasabi\api\script\api_maki.h" />
+    <ClInclude Include="Wasabi\api\script\rootobjcb.h" />
+    <ClInclude Include="Wasabi\api\script\scriptguid.h" />
+    <ClInclude Include="Wasabi\api\script\scriptobj.h" />
+    <ClInclude Include="Wasabi\api\script\scriptvar.h" />
+    <ClInclude Include="Wasabi\api\script\vcputypes.h" />
+    <ClInclude Include="Wasabi\api\service\api_service.h" />
+    <ClInclude Include="Wasabi\api\service\services.h" />
+    <ClInclude Include="Wasabi\api\service\svcs\svc_imgload.h" />
+    <ClInclude Include="Wasabi\api\service\svcs\svc_scriptobj.h" />
+    <ClInclude Include="Wasabi\api\service\waservicefactory.h" />
+    <ClInclude Include="Wasabi\api\syscb\api_syscb.h" />
+    <ClInclude Include="Wasabi\api\syscb\callbacks\corecb.h" />
+    <ClInclude Include="Wasabi\api\syscb\callbacks\svccb.h" />
+    <ClInclude Include="Wasabi\api\syscb\callbacks\syscb.h" />
+    <ClInclude Include="Wasabi\bfc\dispatch.h" />
+    <ClInclude Include="Wasabi\bfc\multipatch.h" />
+    <ClInclude Include="Wasabi\bfc\nsguid.h" />
+    <ClInclude Include="Wasabi\bfc\platform\export.h" />
+    <ClInclude Include="Wasabi\bfc\platform\guid.h" />
+    <ClInclude Include="Wasabi\bfc\platform\platform.h" />
+    <ClInclude Include="Wasabi\bfc\platform\types.h" />
+    <ClInclude Include="Wasabi\bfc\platform\win32.h" />
+    <ClInclude Include="Wasabi\bfc\std_mkncc.h" />
+    <ClInclude Include="Winamp\DSP.H" />
+    <ClInclude Include="Winamp\GEN.H" />
+    <ClInclude Include="Winamp\IN2.H" />
+    <ClInclude Include="Winamp\ipc_pe.h" />
+    <ClInclude Include="Winamp\OUT.H" />
+    <ClInclude Include="Winamp\wa_dlg.h" />
+    <ClInclude Include="Winamp\wa_ipc.h" />
+    <ClInclude Include="xml\ifc_xmlreadercallback.h" />
+    <ClInclude Include="xml\ifc_xmlreaderparams.h" />
+    <ClInclude Include="xml\obj_xml.h" />
+    <ClInclude Include="xspf\api.h" />
+    <ClInclude Include="xspf\XSPFHandler.h" />
+    <ClInclude Include="xspf\XSPFHandlerFactory.h" />
+    <ClInclude Include="xspf\XSPFLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dsp_test\SCRIPT1.RC" />
+    <ResourceCompile Include="enc_flac\enc_flac.rc" />
+    <ResourceCompile Include="gen_classicart\gen_classicart.rc" />
+    <ResourceCompile Include="gen_tray\SCRIPT1.RC" />
+    <ResourceCompile Include="ml_http\ml_http.rc" />
+    <ResourceCompile Include="ml_xmlex\ml_xmlex.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
