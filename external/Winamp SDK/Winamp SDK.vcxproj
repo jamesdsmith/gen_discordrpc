@@ -18,167 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{88407D36-B0EF-4492-A5FA-DFFB025327D6}</ProjectGuid>
-    <RootNamespace>WinampSDK</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="coverdirectory\CoverDirectory.cpp" />
-    <ClCompile Include="coverdirectory\main.cpp" />
-    <ClCompile Include="dsp_test\dsp_test.c" />
-    <ClCompile Include="enc_flac\AudioCoderFlake.cpp" />
-    <ClCompile Include="enc_flac\flake\libflake\crc.c" />
-    <ClCompile Include="enc_flac\flake\libflake\encode.c" />
-    <ClCompile Include="enc_flac\flake\libflake\lpc.c" />
-    <ClCompile Include="enc_flac\flake\libflake\md5.c" />
-    <ClCompile Include="enc_flac\flake\libflake\optimize.c" />
-    <ClCompile Include="enc_flac\flake\libflake\rice.c" />
-    <ClCompile Include="enc_flac\flake\libflake\vbs.c" />
-    <ClCompile Include="enc_flac\main.cpp" />
-    <ClCompile Include="gen_classicart\gen_classicart.cpp" />
-    <ClCompile Include="gen_tray\TRAYCTL.C" />
-    <ClCompile Include="in_chain\main.cpp" />
-    <ClCompile Include="in_raw\MAIN.C" />
-    <ClCompile Include="in_tone\MAIN.C" />
-    <ClCompile Include="irctell\dde.cpp" />
-    <ClCompile Include="irctell\irctell.cpp" />
-    <ClCompile Include="mlExplorer\mlExplorer.cpp" />
-    <ClCompile Include="ml_http\HTMLControl.cpp" />
-    <ClCompile Include="ml_http\main.cpp" />
-    <ClCompile Include="ml_http\SampleHttp.cpp" />
-    <ClCompile Include="ml_iso\main.cpp" />
-    <ClCompile Include="ml_iso\ToISO.cpp" />
-    <ClCompile Include="ml_xmlex\main.cpp" />
-    <ClCompile Include="ml_xmlex\xmlview.cpp" />
-    <ClCompile Include="nde\Binary32Field.cpp" />
-    <ClCompile Include="nde\BinaryField.cpp" />
-    <ClCompile Include="nde\ColumnField.cpp" />
-    <ClCompile Include="nde\Crc.cpp" />
-    <ClCompile Include="nde\Database.cpp" />
-    <ClCompile Include="nde\DBUtils.cpp" />
-    <ClCompile Include="nde\entrypoint.cpp" />
-    <ClCompile Include="nde\Field.cpp" />
-    <ClCompile Include="nde\FilenameField.cpp" />
-    <ClCompile Include="nde\Filter.cpp" />
-    <ClCompile Include="nde\Index.cpp" />
-    <ClCompile Include="nde\IndexField.cpp" />
-    <ClCompile Include="nde\Int128Field.cpp" />
-    <ClCompile Include="nde\Int64Field.cpp" />
-    <ClCompile Include="nde\IntegerField.cpp" />
-    <ClCompile Include="nde\LinkedList.cpp" />
-    <ClCompile Include="nde\NDEString.cpp" />
-    <ClCompile Include="nde\Query.cpp" />
-    <ClCompile Include="nde\Record.cpp" />
-    <ClCompile Include="nde\Scanner.cpp" />
-    <ClCompile Include="nde\StringField.cpp" />
-    <ClCompile Include="nde\StringFieldW.cpp" />
-    <ClCompile Include="nde\Table.cpp" />
-    <ClCompile Include="nde\Vfs.cpp" />
-    <ClCompile Include="nu\HTMLContainer.cpp" />
-    <ClCompile Include="out_null\main.c" />
-    <ClCompile Include="plLoadEx\ExComponent.cpp" />
-    <ClCompile Include="plLoadEx\SimpleHandler.cpp" />
-    <ClCompile Include="plLoadEx\SimpleHandlerFactory.cpp" />
-    <ClCompile Include="plLoadEx\SimpleLoader.cpp" />
-    <ClCompile Include="plLoadEx\w5s.cpp" />
-    <ClCompile Include="ReplayGainAnalysis\gain_analysis.c" />
-    <ClCompile Include="xspf\main.cpp" />
-    <ClCompile Include="xspf\XSPFHandler.cpp" />
-    <ClCompile Include="xspf\XSPFHandlerFactory.cpp" />
-    <ClCompile Include="xspf\XSPFLoader.cpp" />
-  </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Agave\AlbumArt\svc_albumArtProvider.h" />
     <ClInclude Include="Agave\Component\ifc_wa5component.h" />
@@ -314,6 +153,71 @@
     <ClInclude Include="xspf\XSPFLoader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="coverdirectory\CoverDirectory.cpp" />
+    <ClCompile Include="coverdirectory\main.cpp" />
+    <ClCompile Include="dsp_test\dsp_test.c" />
+    <ClCompile Include="enc_flac\AudioCoderFlake.cpp" />
+    <ClCompile Include="enc_flac\flake\libflake\crc.c" />
+    <ClCompile Include="enc_flac\flake\libflake\encode.c" />
+    <ClCompile Include="enc_flac\flake\libflake\lpc.c" />
+    <ClCompile Include="enc_flac\flake\libflake\md5.c" />
+    <ClCompile Include="enc_flac\flake\libflake\optimize.c" />
+    <ClCompile Include="enc_flac\flake\libflake\rice.c" />
+    <ClCompile Include="enc_flac\flake\libflake\vbs.c" />
+    <ClCompile Include="enc_flac\main.cpp" />
+    <ClCompile Include="gen_classicart\gen_classicart.cpp" />
+    <ClCompile Include="gen_tray\TRAYCTL.C" />
+    <ClCompile Include="in_chain\main.cpp" />
+    <ClCompile Include="in_raw\MAIN.C" />
+    <ClCompile Include="in_tone\MAIN.C" />
+    <ClCompile Include="irctell\dde.cpp" />
+    <ClCompile Include="irctell\irctell.cpp" />
+    <ClCompile Include="mlExplorer\mlExplorer.cpp" />
+    <ClCompile Include="ml_http\HTMLControl.cpp" />
+    <ClCompile Include="ml_http\main.cpp" />
+    <ClCompile Include="ml_http\SampleHttp.cpp" />
+    <ClCompile Include="ml_iso\main.cpp" />
+    <ClCompile Include="ml_iso\ToISO.cpp" />
+    <ClCompile Include="ml_xmlex\main.cpp" />
+    <ClCompile Include="ml_xmlex\xmlview.cpp" />
+    <ClCompile Include="nde\Binary32Field.cpp" />
+    <ClCompile Include="nde\BinaryField.cpp" />
+    <ClCompile Include="nde\ColumnField.cpp" />
+    <ClCompile Include="nde\Crc.cpp" />
+    <ClCompile Include="nde\Database.cpp" />
+    <ClCompile Include="nde\DBUtils.cpp" />
+    <ClCompile Include="nde\entrypoint.cpp" />
+    <ClCompile Include="nde\Field.cpp" />
+    <ClCompile Include="nde\FilenameField.cpp" />
+    <ClCompile Include="nde\Filter.cpp" />
+    <ClCompile Include="nde\Index.cpp" />
+    <ClCompile Include="nde\IndexField.cpp" />
+    <ClCompile Include="nde\Int128Field.cpp" />
+    <ClCompile Include="nde\Int64Field.cpp" />
+    <ClCompile Include="nde\IntegerField.cpp" />
+    <ClCompile Include="nde\LinkedList.cpp" />
+    <ClCompile Include="nde\NDEString.cpp" />
+    <ClCompile Include="nde\Query.cpp" />
+    <ClCompile Include="nde\Record.cpp" />
+    <ClCompile Include="nde\Scanner.cpp" />
+    <ClCompile Include="nde\StringField.cpp" />
+    <ClCompile Include="nde\StringFieldW.cpp" />
+    <ClCompile Include="nde\Table.cpp" />
+    <ClCompile Include="nde\Vfs.cpp" />
+    <ClCompile Include="nu\HTMLContainer.cpp" />
+    <ClCompile Include="out_null\main.c" />
+    <ClCompile Include="plLoadEx\ExComponent.cpp" />
+    <ClCompile Include="plLoadEx\SimpleHandler.cpp" />
+    <ClCompile Include="plLoadEx\SimpleHandlerFactory.cpp" />
+    <ClCompile Include="plLoadEx\SimpleLoader.cpp" />
+    <ClCompile Include="plLoadEx\w5s.cpp" />
+    <ClCompile Include="ReplayGainAnalysis\gain_analysis.c" />
+    <ClCompile Include="xspf\main.cpp" />
+    <ClCompile Include="xspf\XSPFHandler.cpp" />
+    <ClCompile Include="xspf\XSPFHandlerFactory.cpp" />
+    <ClCompile Include="xspf\XSPFLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ResourceCompile Include="dsp_test\SCRIPT1.RC" />
     <ResourceCompile Include="enc_flac\enc_flac.rc" />
     <ResourceCompile Include="gen_classicart\gen_classicart.rc" />
@@ -321,6 +225,102 @@
     <ResourceCompile Include="ml_http\ml_http.rc" />
     <ResourceCompile Include="ml_xmlex\ml_xmlex.rc" />
   </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{88407D36-B0EF-4492-A5FA-DFFB025327D6}</ProjectGuid>
+    <RootNamespace>WinampSDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
